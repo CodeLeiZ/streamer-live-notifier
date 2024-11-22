@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+<!--    <link rel="shortcut icon" href="../assets/icon/">  TODO : add icon-->
+</head>
+<body>
+    <header class="toolbar">
+        <button id="more">...</button>
+        <button id="notificationButton">Notification</button>
+        <button id="settingsButton">Setting</button>
+    </header>
+
+    <div class="AddStreamerPanel">
+        <!--TODO : check if it's possible to secure input field against XSS -->
+        <input type="text" id="input-streamer"/>
+        <select name="platform" id="platform-select">
+            <option value="">--Choose--</option>
+            <option value="twitch">Twitch</option>
+            <option value="youtube">YouTube</option>
+            <option value="instagram">Instagram</option>
+        </select>
+        <button id="add-streamer">+</button>
+    </div>
+
+    <div>
+        <ul id="streamer-list-element"></ul>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script src="popup.js"></script>
+</body>
+</html>
